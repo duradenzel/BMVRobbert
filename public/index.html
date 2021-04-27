@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Document</title>
+</head>
+<body>
+    <div class="sidebar" id="mySidebar">
+        <div class="contentwrapper" id="contentwrapper">
+           
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">«
+            </a>
+            <p class="output" id="title"></p>
+            <div class="desc" id="desc"></div>
+            <select name="segmentselect" id="segmentselect">
+                <option value="Kantoor" class="segmentopt">Kantoor</option>
+                <option value="Restaurant" class="segmentopt">Restaurant</option>
+                <option value="Logistiek" class="segmentopt">Logistiek</option>
+                <option value="Installaties" class="segmentopt">Installaties</option>
+                <option value="Algemeen" class="segmentopt">Algemeen</option>
+                <option value="Parkeren" class="segmentopt">Parkeren</option>
+            </select>
+          
+            <div class="map">
+                <iframe id="mapimg" class="mapimg" src=""></iframe>
+            </div>                    
+            <button class="editbutton" id="editbutton">Edit
+                <i class="fa fa-pencil" style="font-size:20px"></i>
+
+            </button>
+        </div>
+    </div>
+
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+<div class="legend" id="legend">
+   <ul class="legendul" id="legendul">
+   <p id="a1">Status<p id="a2">Gebouw:</p></p>
+   
+   </ul>
+</div>
+    <script src="main.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src=functions.js></script>
+    
+</body>
+</html>
